@@ -1,0 +1,5 @@
+2014-08-17 10:59:30,690 ERROR spi.SqlExceptionHelper - Column 'user_class' cannot be null
+2014-08-17 11:13:57,996 ERROR spi.SqlExceptionHelper - Unknown column 'zszcriseri0_.riser_sub' in 'field list'
+2014-08-17 11:17:27,904 ERROR spi.SqlExceptionHelper - Unknown column 'zszcriseri0_.riser_sub' in 'field list'
+2014-08-17 11:18:51,305 ERROR spi.SqlExceptionHelper - Unknown column 'zszcriseri0_.riser_sub' in 'field list'
+2014-08-17 11:35:55,096 ERROR spi.SqlExceptionHelper - Unknown column 'zszcriseri0_.riser_sub' in 'field list'

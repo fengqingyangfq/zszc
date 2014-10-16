@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="MySQL - zszc@localhost" uuid="cd2dc221-e7ca-4d81-891a-9e1241582e3a">
+    <database-info product="MySQL" version="5.6.12-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="zszc"/>
+    <table name="zszc_admin_user" schema="" catalog="zszc" type="TABLE">
+      <column name="user_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="55So5oi3SUQ=" autoIncrement="true"/>
+      <column name="user_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="CHAR" precision="32" scale="0" nullable="false" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="user_id"/>
+    </table>
+    <table name="zszc_disclose" schema="" catalog="zszc" type="TABLE">
+      <column name="disc_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5oqr6ZyySUTvvIzku6Xml7bpl7TkuLrlgLw=" autoIncrement="true"/>
+      <column name="pro_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6aG555uuSUQ="/>
+      <column name="riser_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5Y+R6LW35Lq6SUQ="/>
+      <column name="disc_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5oqr6Zyy5pe26Ze0"/>
+      <column name="disc_address" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" remarks="5oqr6Zyy5Zyw5Z2A77yM55Sx5a6a5L2N5o+Q5L6b"/>
+      <column name="disc_title" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" remarks="5oqr6Zyy5qCH6aKY"/>
+      <column name="disc_money" sqlType="DECIMAL" precision="10" scale="0" nullable="false" jdbcType="3" remarks="5oqr6Zyy6YeR6aKd"/>
+      <column name="disc_pic" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" remarks="5oqr6Zyy5Zu+54mH"/>
+      <primary-key name="PRIMARY" columns="disc_id"/>
+    </table>
+    <table name="zszc_finace" schema="" catalog="zszc" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6YeR6aKd6KGoSUQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="55So5oi3SUQ="/>
+      <column name="pro_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6aG555uuSUQ="/>
+      <column name="money" sqlType="DECIMAL" precision="10" scale="0" nullable="false" jdbcType="3" remarks="6YeR6aKd"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="zszc_picture" schema="" catalog="zszc" type="TABLE">
+      <column name="pic_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5Zu+54mHSUQ=" autoIncrement="true"/>
+      <column name="pic_name" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="5Zu+54mH5ZCN77yM5pe26Ze05oiz" version="true"/>
+      <column name="pic_remark" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Zu+54mH5qCH56S6"/>
+      <column name="url" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" remarks="5Zu+54mH5Zyw5Z2A"/>
+      <primary-key name="PRIMARY" columns="pic_id"/>
+    </table>
+    <table name="zszc_pro_info" schema="" catalog="zszc" type="TABLE">
+      <column name="pro_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6aG555uuSUQ=" autoIncrement="true"/>
+      <column name="pro_title" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" remarks="6aG555uu5ZCN56ew"/>
+      <column name="pro_status" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="6aG555uu54q25oCB77ybMO+8neato+WcqOi/m+ihjO+8jDHvvJ3mraPlnKjlrqHmoLjvvIwy77yd5bey57uT5p2f77yMMz3lj5HotbfkuK0="/>
+      <column name="pro_pic" sqlType="VARCHAR" precision="1000" scale="0" nullable="false" jdbcType="12" remarks="5Zu+54mHVVJM"/>
+      <column name="pro_goal" sqlType="DECIMAL" precision="10" scale="0" nullable="false" jdbcType="3" remarks="6aG555uu55uu5qCH56256ZuG6YeR6aKd"/>
+      <column name="pro_start" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="6aG555uu6LW35aeL56256ZuG5pe26Ze0"/>
+      <column name="pro_end" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="6aG555uu57uT5p2f56256ZuG5pe26Ze0"/>
+      <column name="pro_remark" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="6aG555uu5qCH6K6w"/>
+      <primary-key name="PRIMARY" columns="pro_id"/>
+    </table>
+    <table name="zszc_riser_info" schema="" catalog="zszc" type="TABLE">
+      <column name="riser_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5Y+R6LW35Lq6SUQ=" autoIncrement="true"/>
+      <column name="pro_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5a+55bqU6aG555uuSUQ="/>
+      <column name="riser_name" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12" remarks="5Y+R6LW35Lq65aeT5ZCN"/>
+      <column name="riser_ID_num" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="5Y+R6LW35Lq66Lqr5Lu96K+B5Y+3"/>
+      <column name="riser_team_name" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12" remarks="5omn6KGM5Zui6Zif5ZCN56ew"/>
+      <column name="riser_bank_name" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" remarks="5byA5oi36KGM5ZCN56ew"/>
+      <column name="riser_sub_bank_name" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" remarks="5byA5oi35pSv6KGM"/>
+      <column name="riser_bank_holder" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12" remarks="5byA5oi35Lq65ZCN"/>
+      <column name="riser_bank_num" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12" remarks="6ZO26KGM6LSm5Y+3"/>
+      <primary-key name="PRIMARY" columns="riser_id"/>
+    </table>
+    <table name="zszc_user_info" schema="" catalog="zszc" type="TABLE">
+      <column name="user_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="55So5oi3SUQ=" autoIncrement="true"/>
+      <column name="user_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="J+S8l+WWhOS6uic=" remarks="55So5oi35ZCN"/>
+      <column name="user_password" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" remarks="55m75b2V5a+G56CB"/>
+      <column name="user_email" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="6YKu566x"/>
+      <column name="user_avatar" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5aS05YOPSUQ="/>
+      <column name="user_status" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA==" remarks="55So5oi354q25oCB77ybMD3muLjlrqIgMT3ms6jlhozmiJDlip8gMj3lhbbku5bnirbmgIE="/>
+      <column name="user_class" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA==" remarks="55So5oi357G75Z6L77ybMD3mma7pgJrnlKjmiLcgMe+8neWPkei1t+S6uiAy77yddmlw"/>
+      <primary-key name="PRIMARY" columns="user_id"/>
+    </table>
+  </data-source>
+</component>
